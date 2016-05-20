@@ -7,6 +7,7 @@ class CreateUsers < ActiveRecord::Migration
       t.integer :happiness, default: 0
       t.integer :tickets, default: 0
       t.integer :height, default: 0
+      t.string :password_digest
 
       t.boolean :admin, default: false
     end
