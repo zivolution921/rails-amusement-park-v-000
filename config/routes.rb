@@ -10,5 +10,6 @@ Rails.application.routes.draw do
   post '/signin' => 'sessions#create'
   delete '/signout' => 'sessions#destroy'
   post '/attractions/:id' => 'rides#create'
+  post 'rides/new', to: 'rides#create'
 
 end

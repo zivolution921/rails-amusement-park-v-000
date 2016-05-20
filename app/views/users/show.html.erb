@@ -6,10 +6,14 @@
     <% if @user.admin %>
       <p><%= content_tag(:strong, "ADMIN")%></p>
     <% end %>
+    
     <p><%= content_tag(:strong, "Name:") %> <%= @user.name %></p>
     <p><%= content_tag(:strong, "Tickets:") %> <%= @user.tickets %></p>
     <p><%= content_tag(:strong, "Mood:") %> <%= @user.mood %></p>
     <p><%= content_tag(:strong, "Height:") %> <%= @user.height %> inches</p>
+
+    <p><%= @user_message %></p>
+    
     <p><%= link_to "Edit", edit_user_path %></p>
     <p><%= link_to "See attractions", attractions_path %></p>
   </div>
